@@ -3,6 +3,7 @@
 (defn foo
   "I don't do a whole lot."
   [x]
-  (println x "Hello, World!"))
+  (println x "Hello, World!")
+  x)
 
-(defn -main [& args](println "main"))
+(defn -main [& args](foo args[0]))
